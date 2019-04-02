@@ -71,4 +71,5 @@ gem 'jquery-rails'
 
 # FA icons
 gem 'font-awesome-rails'
+gem 'devise'
 
