@@ -36,7 +36,9 @@
         </div>
       </div>
       <div class="centeredFlex">
-        <%= image_tag post.image, class: 'main-image' %>
+        <%=link_to post_path(post) do %>
+          <%= image_tag post.image, class: 'main-image' %>
+        <% end %>
       </div>
       <div class="description">
         <%= post.description %>
