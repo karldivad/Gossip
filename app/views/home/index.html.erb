@@ -29,7 +29,9 @@
           <%= post.user.username %>
         </div>
       </div>
-      <%= image_tag post.image, class: 'main-image' %>
+      <div class="centeredFlex">
+        <%= image_tag post.image, class: 'main-image' %>
+      </div>
       <div class="description">
         <%= post.description %>
       </div>
