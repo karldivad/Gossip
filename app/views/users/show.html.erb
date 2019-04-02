@@ -2,8 +2,7 @@
   <div class="profile row">
     <div class="col-md-4 avatar">
       <div class="wrapper">
-        <img src="https://picsum.photos/200/300/?random
-">
+        <img src="https://picsum.photos/200/300/?random">
       </div>
     </div>
     
@@ -15,7 +14,7 @@
         </a>
       </div>
       <ul class="posts">
-        <li><span>12</span> posts</li>
+        <li><span><%= @posts.count %></span> posts</li>
         <li><span>195</span> followers</li>
         <li><span>345</span> following</li>
       </ul>
@@ -45,16 +44,9 @@
 </div>
 
 <div class="user-images">
-  <div class="wrapper">
-    <img src="https://picsum.photos/300/300/?random
-">
-  </div>
-  <div class="wrapper">
-    <img src="https://picsum.photos/g/200/300/?random
-">
-  </div>
-  <div class="wrapper">
-    <img src="https://picsum.photos/400/300/?random
-">
-  </div>
+  <% @posts.each do |post|%>
+    <div class="wrapper">
+      <%=image_tag post.image %>
+    </div>
+  <% end %>
 </div>
