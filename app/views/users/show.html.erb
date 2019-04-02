@@ -2,7 +2,11 @@
   <div class="profile row">
     <div class="col-md-4 avatar">
       <div class="wrapper">
-        <img src="https://picsum.photos/200/300/?random">
+        <% if current_user.avatar.attached? %>
+          <%= image_tag current_user.avatar %>
+        <% else %>
+            <img src="https://ui-avatars.com/api/?background=0D8ABC&color=fff&name=CS">
+        <%end %>
       </div>
     </div>
     
