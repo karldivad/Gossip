@@ -73,3 +73,6 @@ gem 'devise'
 
 # Pagination
 gem 'kaminari'
+
+# Amazon S3
+gem 'aws-sdk-s3'
